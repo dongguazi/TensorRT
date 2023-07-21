@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project>
+  <ProjectOutputs>
+    <ProjectOutput>
+      <FullPath>D:\AI\tensorrtx-yolov5-v6.2\tensorrtx-yolov5-v6.2\tensorrtx-yolov5-v6.2\yolov5\build\x64\Release\ZERO_CHECK</FullPath>
+    </ProjectOutput>
+    <ProjectOutput>
+      <FullPath>D:\AI\tensorrtx-yolov5-v6.2\tensorrtx-yolov5-v6.2\tensorrtx-yolov5-v6.2\yolov5\build\Release\yolov5.exe</FullPath>
+    </ProjectOutput>
+  </ProjectOutputs>
+  <ContentFiles />
+  <SatelliteDlls />
+  <NonRecipeFileRefs />
+</Project>
