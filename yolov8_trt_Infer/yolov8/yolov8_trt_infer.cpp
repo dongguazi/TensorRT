@@ -3,7 +3,7 @@
 
 # include "Yolov8Dectector.h"
 
-#define BATCH_SIZE 2
+#define BATCH_SIZE 6
 #define INPUT_W 640
 #define INPUT_H 640
 #define INPUT_SIZE 640
@@ -45,7 +45,7 @@ int main()
 	//yolo->Onnx2Engine("D:\\AI\\Infers\\TRT\\yolov8_trt_Infer\\yolov8\\best.onnx","D:\\AI\\Infers\\TRT\\yolov8_trt_Infer\\yolov8\\best.engine","FP16");
 
 
-	yolo->InitialModel(engine_filepath, false);
+	yolo->InitialModel(engine_filepath);
 
 
 	//------×¼±¸ÊäÈë

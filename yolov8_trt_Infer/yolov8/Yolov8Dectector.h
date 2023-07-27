@@ -64,7 +64,7 @@ private:
 	  Logger gLogger;
 
 public:
-	  void InitialModel(std::string& engine_name, bool Onnx2Trt);
+	  void InitialModel(std::string& engine_name);
 	  void Infer(uchar* input_buffer_host, int* nums_out, int* boxes_out, int* class_ids_out, float* confidences_out, int width, int height);
 	  void Onnx2Engine(string onnx_path, string engine_path, string format );
 

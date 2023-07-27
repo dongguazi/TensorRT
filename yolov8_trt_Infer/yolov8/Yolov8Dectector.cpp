@@ -141,9 +141,9 @@ void Yolov8Dectector::setInputBindings(ICudaEngine* engine_infer, IExecutionCont
 /// 初始化engine,生成context
 /// </summary>
 /// <param name="engine_name">EnginePath</param>
-void  Yolov8Dectector::InitialModel(std::string& engine_name,bool Onnx2Trt)
+void  Yolov8Dectector::InitialModel(std::string& engine_name)
 {
-    if (Onnx2Trt)
+    if (false)
     {
         std::ifstream file;
         int length;
@@ -184,7 +184,7 @@ void  Yolov8Dectector::Infer( uchar* input_buffer_host, int* nums_out, int* boxe
         Mat inputImage(org_height,org_width,CV_8UC3);
         memcpy(inputImage.data, input_buffer_host + bs_i * org_width * org_height * 3, org_width * org_height * 3 * sizeof(uchar));
         
-        imwrite(std::to_string(bs_i)+ ".jpg",inputImage);
+       //imwrite(std::to_string(bs_i)+ ".jpg",inputImage);
 
         float* h_input_new = new float[step];
         preprocess(inputImage, h_input_new, kYolov8Param.kInputW, kYolov8Param.kInputH, kYolov8Param.kChannel);

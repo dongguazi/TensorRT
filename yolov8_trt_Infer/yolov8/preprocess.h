@@ -13,4 +13,4 @@ void convert(const cv::Mat& input, cv::Mat& output, const bool normalize, const 
 float preprocessWithRatio(const cv::Mat& input_image, float input_tensor[], int input_width, int input_height, int input_channels);
 
 //«∞¥¶¿Ì
-void preprocess(cv::Mat& img, float data[], int input_width, int input_height, int input_channels);
+void preprocess(cv::Mat& img, float* data, int model_width, int model_height, int model_channels);
