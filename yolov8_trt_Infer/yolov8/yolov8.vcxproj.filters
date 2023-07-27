@@ -15,12 +15,33 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="yolov8_trt.cpp">
+    <ClCompile Include="yolov8_trt_infer.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="preprocess.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="postprocess.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Yolov8Dectector.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="yolov8API.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="logging.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="preprocess.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="postprocess.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Yolov8Dectector.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

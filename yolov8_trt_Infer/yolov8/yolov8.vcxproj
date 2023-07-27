@@ -76,7 +76,7 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <IncludePath>D:\Program Files\opencv\opencv4.6.0\build\include\opencv2;D:\Program Files\opencv\opencv4.6.0\build\include;D:\Program Files\TensorRT-8.5.1.7\include;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.6\include;$(IncludePath)</IncludePath>
-    <LibraryPath>D:\Program Files\opencv\opencv4.6.0\build\x64\vc15\lib;C:\Program Files (x86)\Intel\openvino_2022.3.0\runtime\lib\intel64\Release;C:\Program Files (x86)\Intel\openvino_2022.3.0\runtime\3rdparty\tbb\lib;$(LibraryPath)</LibraryPath>
+    <LibraryPath>D:\Program Files\opencv\opencv4.6.0\build\x64\vc15\lib;C:\Program Files (x86)\Intel\openvino_2022.3.0\runtime\lib\intel64\Release;C:\Program Files (x86)\Intel\openvino_2022.3.0\runtime\3rdparty\tbb\lib;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.6\lib\x64;D:\Program Files\TensorRT-8.5.1.7\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -134,10 +134,17 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="yolov8_trt.cpp" />
+    <ClCompile Include="postprocess.cpp" />
+    <ClCompile Include="preprocess.cpp" />
+    <ClCompile Include="yolov8API.cpp" />
+    <ClCompile Include="Yolov8Dectector.cpp" />
+    <ClCompile Include="yolov8_trt_infer.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="logging.h" />
+    <ClInclude Include="postprocess.h" />
+    <ClInclude Include="preprocess.h" />
+    <ClInclude Include="Yolov8Dectector.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
